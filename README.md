@@ -1,24 +1,23 @@
 # Тестовое задание JWT
 Я немного отошла от требований тестового задания и написала код на Java, а не на Golang.
 
-Какие технологии использовались:\
--Java\
--Spring\
--JWT\
--Postgres\
+Какие технологии использовались:
+-Java
+-Spring
+-JWT
+-Postgres
 
 # Запуск 
 Чтобы подключиться к базе используется Docker.(данные указаны в application.properties).
 Перед проверкой запускаем AthTestApplication, далее переходим в AuthController и выбираем нужную нам функцию.
-Пробуем зарегистрировать пользователя:\
+Пробуем зарегистрировать пользователя:
 ###
 POST http://localhost:8080/auth
 Content-Type: application/json
-
-{
-  "guid": "guid",
-  "userSecret": "key"
-}
+    {
+      "guid": "guid",
+      "userSecret": "key"
+    }
 
 получаем:
 
@@ -30,10 +29,10 @@ User registered successfully
 POST http://localhost:8080/auth/token
 Content-Type: application/json
 
-{\
-  "guid": "guid",\
-  "userSecret": "key"\
-}\
+{
+  "guid": "guid",
+  "userSecret": "key"
+}
 
 получаем:
 
