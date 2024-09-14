@@ -10,7 +10,7 @@
 # Запуск 
 Чтобы подключиться к базе используется Docker.(данные указаны в application.properties).
 Перед проверкой запускаем AthTestApplication, далее переходим в AuthController и выбираем нужную нам функцию.  
-Пробуем зарегистрировать пользователя:  
+Чтобы получить токен нужно зарегистрировать пользователя:  
 ###  
 POST http://localhost:8080/auth  
 Content-Type: application/json  
